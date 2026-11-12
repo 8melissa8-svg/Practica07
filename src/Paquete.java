@@ -1,7 +1,6 @@
 /**
- * Clase que representa el modelo de datos de un paquete para envio.
- * Almacena la informacion base como dimensiones, peso y valor monetario,
- * ademas de ofrecer constructores sobrecargados, getters, setters y metodos de calculo.
+ * Clase principal que contiene atributos, setters, getter
+   Costructores y metodos 
  * 
  * @author Melissa Prado Hernandez
  * @version 1.0
@@ -17,7 +16,7 @@ public class Paquete {
     private double valorMonetario;
 
     /**
-     * Constructor por defecto sin parametros. Inicializa valores base.
+     * Constructor por defecto sin parametros.
      */
     public Paquete() {
         this.pesoKilogramos = 1.0;
@@ -29,7 +28,7 @@ public class Paquete {
     }
 
     /**
-     * Constructor con un parametro para definir el codigo alfanumerico.
+     * Constructor con un parametro (alfanumerico).
      * 
      * @param alfanumerico Codigo identificador del paquete.
      */
@@ -116,7 +115,7 @@ public class Paquete {
      * @param altoDelPaquete Alto en cm.
      * @param largoDelPaquete Largo en cm.
      * @param anchoDelPaquete Ancho en cm.
-     * @param valorMonetario Valor monetario declarado en MXN.
+     * @param valorMonetario Valor monetario declarado en pesos
      */
     public Paquete(String alfanumerico, double pesoKilogramos, double altoDelPaquete, double largoDelPaquete, double anchoDelPaquete, double valorMonetario) {
         this.alfanumerico = alfanumerico;
@@ -127,7 +126,7 @@ public class Paquete {
         this.valorMonetario = valorMonetario;
     }
 
-    // --- MÉTODOS DE CONSULTA (Getters) ---
+    //  Los Getters 
 
     /**
      * Obtiene el codigo alfanumerico.
@@ -177,7 +176,7 @@ public class Paquete {
         return this.valorMonetario;
     }
 
-    // --- MÉTODOS DE ASIGNACION (Setters) ---
+    //  Los Setters
 
     /**
      * Establece el codigo alfanumerico.
@@ -247,7 +246,7 @@ public class Paquete {
         }
     }
 
-    // --- MÉTODOS DE CÁLCULO ---
+    //  Métodos con calculos
 
     /**
      * Calcula el peso volumetrico aplicando la formula (largo * ancho * alto) / 5000.

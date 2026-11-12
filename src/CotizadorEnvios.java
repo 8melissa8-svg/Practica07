@@ -1,9 +1,5 @@
 /**
- * Clase de utileria que contiene las reglas de negocio para la cotizacion de envios
- * y evaluacion de politicas de seguro.
- * 
- * NOTA: Todos los metodos son estaticos (static), por lo que esta clase NO se instancia.
- * 
+ * Clase para evaluar las reglas del negocio
  * @author Melissa Prado Hernandez 
  * @version 1.0
  */
@@ -82,7 +78,7 @@ public class CotizadorEnvios {
             return true;
         }
 
-        // Si algun lado mide mas de 60 cm
+        // Si algun lado mide mas de 60 cm 
         if (p.getAltoDelPaquete() > 60.0 || p.getAnchoDelPaquete() > 60.0 || p.getLargoDelPaquete() > 60.0) {
             return true;
         }

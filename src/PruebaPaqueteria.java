@@ -1,7 +1,5 @@
 /**
- * Clase ejecutable para realizar la prueba del sistema de paqueteria,
- * instanciando los paquetes de prueba y validando el cotizador.
- * 
+ * Clase prueba de las anteriores clases 
  * @author Melissa Prado Hernandez
  * @version 1.0
  */
