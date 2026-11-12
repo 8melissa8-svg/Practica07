@@ -10,7 +10,7 @@
 public class CotizadorEnvios {
 
     /**
-     * Constructor privado para evitar que la clase sea instanciada con new.
+     * Constructor 
      */
     public CotizadorEnvios() {}
 

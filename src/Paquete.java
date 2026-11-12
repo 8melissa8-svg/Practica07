@@ -171,7 +171,7 @@ public class Paquete {
 
     /**
      * Obtiene el valor monetario.
-     * @return El valor en MXN.
+     * @return El valor em pesos
      */
     public double getValorMonetario() {
         return this.valorMonetario;
@@ -181,7 +181,7 @@ public class Paquete {
 
     /**
      * Establece el codigo alfanumerico.
-     * @param alfanumerico Nuevo codigo.
+     * @param alfanumerico 
      */
     public void setAlfanumerico(String alfanumerico) {
         this.alfanumerico = alfanumerico;
@@ -189,7 +189,7 @@ public class Paquete {
 
     /**
      * Establece el peso fisico asegurando que sea mayor a 0.
-     * @param pesoKilogramos Peso en kg.
+     * @param pesoKilogramos 
      */
     public void setPesoKilogramos(double pesoKilogramos) {
         if (pesoKilogramos > 0) {
@@ -201,7 +201,7 @@ public class Paquete {
 
     /**
      * Establece el alto asegurando que sea mayor a 0.
-     * @param altoDelPaquete Alto en cm.
+     * @param altoDelPaquete 
      */
     public void setAltoDelPaquete(double altoDelPaquete) {
         if (altoDelPaquete > 0) {
@@ -213,7 +213,7 @@ public class Paquete {
 
     /**
      * Establece el ancho asegurando que sea mayor a 0.
-     * @param anchoDelPaquete Ancho en cm.
+     * @param anchoDelPaquete 
      */
     public void setAnchoDelPaquete(double anchoDelPaquete) {
         if (anchoDelPaquete > 0) {
@@ -225,7 +225,7 @@ public class Paquete {
 
     /**
      * Establece el largo asegurando que sea mayor a 0.
-     * @param largoDelPaquete Largo en cm.
+     * @param largoDelPaquete 
      */
     public void setLargoDelPaquete(double largoDelPaquete) {
         if (largoDelPaquete > 0) {
@@ -237,7 +237,7 @@ public class Paquete {
 
     /**
      * Establece el valor monetario asegurando que no sea negativo.
-     * @param valorMonetario Valor en MXN.
+     * @param valorMonetario 
      */
     public void setValorMonetario(double valorMonetario) {
         if (valorMonetario >= 0) {
@@ -251,7 +251,7 @@ public class Paquete {
 
     /**
      * Calcula el peso volumetrico aplicando la formula (largo * ancho * alto) / 5000.
-     * @return El peso volumetrico en kg.
+     * @return El peso volumetrico 
      */
     public double calculaPesoVolumetrico() {
         return (this.largoDelPaquete * this.anchoDelPaquete * this.altoDelPaquete) / 5000.0;
